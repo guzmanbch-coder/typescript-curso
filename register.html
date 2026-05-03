@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/favicon2.ico" type="image/x-icon">
+    <title>Registro - Premium App</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <img class="avatar" src="./src/image/perfil.jpg" alt="No se encontro imagen">
+        <h2>Registro</h2>
+
+        <form id="registerForm" novalidate>
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" placeholder="Tu nombre" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="tu@email.com" required>
+
+            <label for="password">Contraseña</label>
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Tu contraseña" required>
+                <button type="button" class="toggle-password" data-target="password">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.644C3.399 8.049 7.21 5 12 5c4.79 0 8.601 3.049 9.964 6.678.04.108.04.22 0 .328C20.601 15.951 16.79 19 12 19c-4.79 0-8.601-3.049-9.964-6.678z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </button>
+            </div>
+
+            <label for="confirmPassword">Confirmar Contraseña</label>
+            <div class="password-container">
+                <input type="password" id="confirmPassword" placeholder="Repite tu contraseña" required>
+                <button type="button" class="toggle-password" data-target="confirmPassword">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.644C3.399 8.049 7.21 5 12 5c4.79 0 8.601 3.049 9.964 6.678.04.108.04.22 0 .328C20.601 15.951 16.79 19 12 19c-4.79 0-8.601-3.049-9.964-6.678z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </button>
+            </div>
+
+            <p id="mensaje"></p>
+
+            <button type="submit" id="botonRegister">Registrarse</button>
+            
+            <a href="index.html" class="registrate">¿Ya tienes cuenta? Inicia sesión</a>
+        </form>
+    </div>
+
+    <script type='module' src="src/register.js"></script>
+</body>
+
+</html>

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="image/favicon2.ico" type="image/x-icon">
     <title>Login</title>
-    <link rel="stylesheet" href="src/style.css" </head>
+    <link rel="stylesheet" href="src/style.css">
+</head>
 
 <body>
 
@@ -17,23 +18,34 @@
         <form id="loginForm" novalidate>
 
             <label> Email </label>
-            <br>
+        
             <input type="email" id="email">
-            <br>
-            <br>
-            <label>Password </label>
-            <br>
-            <input type="password" id="password">
-            <br>
-            <br>
+            
+            
+            <label>Password</label>
+            <div class="password-container">
+                <input type="password" id="password">
+                <button type="button" id="togglePassword" class="toggle-password">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.644C3.399 8.049 7.21 5 12 5c4.79 0 8.601 3.049 9.964 6.678.04.108.04.22 0 .328C20.601 15.951 16.79 19 12 19c-4.79 0-8.601-3.049-9.964-6.678z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </button>
+            </div>
+            
             <p id="mensaje"></p>
-            <br><br>
+        
             <button type="submit" id="botonLogin">Ingresar</button>
             <p class="forgot-password">
                 <a href="#" id="forgotPassword">Olvidó su contraseña?</a>
             </p>
             <input type="text" id="token" pattern="^\d{6}$" inputmode="numeric" placeholder="Ingrese el token"
                 maxlength="6" required>
+                
+
+            <a class="registrate" href="register.html">Registrate aqui</a>
+
+
         </form>
 
 
